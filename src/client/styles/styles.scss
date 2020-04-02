@@ -1,0 +1,12 @@
+@import 'reset.scss', 'header.scss', 'container.scss', 'footer.scss', 'variables.scss', 'nav.scss';
+@import 'app-section.scss';
+
+html {
+    font-family: Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
+    background-color: white;
+}
+
+.lead {
+    padding: 2.5em;
+    font-size: $font-medium;
+}

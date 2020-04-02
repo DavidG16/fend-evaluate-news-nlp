@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.footer {
+    background-color: #ececec;
+    font-size: $font-x-small;
+    height: 50px;
+
+    & .container {
+        // background-color: red;
+        padding: 10px;
+    }
+}

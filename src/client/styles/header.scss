@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.hero-text{
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+
+    & h1 {
+        font-size: $font-large;
+        letter-spacing: -1px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+}
