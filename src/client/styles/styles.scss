@@ -1,5 +1,4 @@
-@import 'reset.scss', 'header.scss', 'container.scss', 'footer.scss', 'variables.scss', 'nav.scss';
-@import 'app-section.scss';
+@import 'reset.scss', 'header.scss', 'container.scss', 'footer.scss', 'variables.scss', 'nav.scss', 'app-section.scss', 'form.scss';
 
 html {
     font-family: Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
@@ -9,4 +8,8 @@ html {
 .lead {
     padding: 2.5em;
     font-size: $font-medium;
+}
+
+.hide {
+    display: none;
 }

@@ -3,11 +3,16 @@
 .footer {
     background-color: #ececec;
     font-size: $font-x-small;
-    height: 50px;
     
 
     & .container {
-        // background-color: red;
         padding: 10px;
+        height: 100%;
+
     }
+}
+
+.footer-text {
+    height: 100%;
+    align-items: center;
 }

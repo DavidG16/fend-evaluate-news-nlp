@@ -4,12 +4,19 @@
     position: relative;
     vertical-align: top;
     text-align: center;
+    margin:20px;
 
     & h1 {
         font-size: $font-large;
         letter-spacing: -1px;
         font-weight: 700;
         line-height: 1;
+        @media screen and (max-width: $break-medium) {
+            font-size: $font-m-large;
+        } 
+        @media screen and (max-width: $break-small) {
+            font-size: $font-s-large;
     }
+}
 
 }

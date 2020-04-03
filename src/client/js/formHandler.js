@@ -1,7 +1,7 @@
 function handleSubmit(e) {
     e.preventDefault()
 
-    const input_url = document.getElementById("news").value
+    const input_url = document.getElementById("news-id").value
 
     if (Client.validURL(JSON.parse(JSON.stringify(input_url)))){
         console.log("Valid URL")
@@ -20,6 +20,7 @@ function handleSubmit(e) {
         .then(res => res.json())
         .then(data => {
             console.log(data); 
+            Client.uiUpdate(data)
         })
     } else {
         console.log("Error")

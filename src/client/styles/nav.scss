@@ -14,7 +14,12 @@
 }
 
 #logo {
-    margin-left: 2em;
+    margin-left: 40px;
     align-self:center;
     display: flex;
+    height: 100%;
+    align-items: center;
+    @media screen and (min-width: $break-large) {
+        margin-left: 15em;
+    }
 }

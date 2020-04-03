@@ -24,7 +24,7 @@
                             Figure out the sentiment of what you read! 
                         </h1>
                         <div class="sub-text">
-                            <p class="lead">It's fast and easy! No more bias.</p>
+                            <p class="lead">It's fast and easy!</p>
                         </div>
                     </div>
                 </div>
@@ -36,31 +36,27 @@
                     <p class="lead"> Let's start!</p>
                     
                     <div class="app-input">
-                        <form onsubmit="return Client.handleSubmit(event)">
-                            <input id="news" name="input" type="text" placeholder="Place news article url">
-                            <input type="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                        <form class="form" onsubmit="return Client.handleSubmit(event)">
+                            <input  id="news-id" class="news" name="input" type="text" placeholder="Paste a news article url">
+                            <input  class="submit" type="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                         </form>
                     </div>
                 </div>  
-                <div class="result-card">
-                    <div class="container">
-
-                        <p class="lead"> Your results</p>
-                        <p id="results"></p>
-                    </div>
-                </div>
+                <div id="results-card-id" class="result-card hide"></div>
             </section>  
-            
+
             <div class="footer">
                 <div class="container">
-                    <div class="footer-text"></div>
+                    <div class="footer-text">
                         <span> © NLP Evaluator </span>
-                </div>
-                <div class="social">
-
+                    </div>
+                    <div class="social">
+                    </div>
                 </div>
             </div>
-
         </div>
+
+
+
     </body>
 </html>
