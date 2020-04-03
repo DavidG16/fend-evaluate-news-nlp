@@ -2,61 +2,65 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Evaluate News</title>
     </head>
-    <div class="nav">
-        <div class="main">
-            <div id="logo">
-                <p> NLP News Eval</p>
+    <body>
+        <div class="nav">
+            <div class="main">
+                <div id="logo">
+                    <p> NLP News Eval</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="content">
+        <div class="content">
 
-        <header class="hero">
-            <div class="container">
-                <div class="hero-text">
-                    <h1>
-                        Figure out the sentiment of what you read! 
-                    </h1>
-                    <div class="sub-text">
-                        <p class="lead">It's fast and easy! No more bias.</p>
+            <header class="hero">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1>
+                            Figure out the sentiment of what you read! 
+                        </h1>
+                        <div class="sub-text">
+                            <p class="lead">It's fast and easy! No more bias.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <section class="app-section">
-            <div class="container">
-                <h2> Sentiment Analyzer</h2>
-                <p class="lead"> Let's start!</p>
-                
-                <div class="app-input">
-                    <form>
-                        <input id="news" name="input" type="text" placeholder="Place news article url">
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>  
-            <div class="result-card">
+            <section class="app-section">
                 <div class="container">
+                    <h2> Sentiment Analyzer</h2>
+                    <p class="lead"> Let's start!</p>
+                    
+                    <div class="app-input">
+                        <form onsubmit="return Client.handleSubmit(event)">
+                            <input id="news" name="input" type="text" placeholder="Place news article url">
+                            <input type="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                        </form>
+                    </div>
+                </div>  
+                <div class="result-card">
+                    <div class="container">
 
-                    <p class="lead"> Your results</p>
-                    <p> Results place holder</p>
+                        <p class="lead"> Your results</p>
+                        <p id="results"></p>
+                    </div>
+                </div>
+            </section>  
+            
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-text"></div>
+                        <span> © NLP Evaluator </span>
+                </div>
+                <div class="social">
+
                 </div>
             </div>
-        </section>  
-        
-        <div class="footer">
-            <div class="container">
-                <div class="footer-text"></div>
-                    <span> © NLP Evaluator </span>
-            </div>
-            <div class="social">
 
-            </div>
         </div>
-
-    </div>
+    </body>
 </html>
